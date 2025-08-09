@@ -1,30 +1,68 @@
-# racipies
+## Annapurna
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Cook smart. Eat well. Live better.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/debashis7307s-projects/v0-rasipies)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/gOFs93WYM2f)
+![Annapurna logo](public/aplogo1.png)
 
-## Overview
+### What is this?
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+Annapurna is a modern recipe and meal companion built with performance and design in mind. Scan groceries, get AI‑curated recipes, and track nutrition — all in a delightful, minimal UI.
 
-## Deployment
+### Highlights
 
-Your project is live at:
+- **Smart Inventory Scan**: OCR your bills/fridge photos into a live pantry.
+- **AI‑Powered Recipes**: Personalized ideas based on time, diet, and what you have.
+- **Nutrition Insights**: Quick calorie/macros overview as you cook and log.
+- **WhatsApp Fast Lane**: Interact via chat for ultra‑fast actions.
+- **Smooth UX**: Motion, ambient glows, and Lottie visuals.
 
-**[https://vercel.com/debashis7307s-projects/v0-rasipies](https://vercel.com/debashis7307s-projects/v0-rasipies)**
+### Glimpse
 
-## Build your app
+<p align="center">
+  <img src="public/Screenshot1.png" alt="Screenshot 1" width="48%" />
+  <img src="public/Screenshot2.png" alt="Screenshot 2" width="48%" />
+</p>
 
-Continue building your app on:
+### Tech Stack
 
-**[https://v0.dev/chat/projects/gOFs93WYM2f](https://v0.dev/chat/projects/gOFs93WYM2f)**
+- **Next.js 15** + **React 19**
+- **Tailwind CSS 4** for styling
+- **Framer Motion** for animations
+- **Radix UI** + **Lucide** icons
+- **Lottie** for rich animations
 
-## How It Works
+### Quick Start
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+pnpm install
+pnpm dev
+# open http://localhost:3000
+```
+
+Or with npm:
+
+```bash
+npm install
+npm run dev
+```
+
+### Scripts
+
+- **dev**: start the local dev server
+- **build**: production build
+- **start**: run the production server
+- **lint**: lint the codebase
+
+### Structure
+
+```text
+app/                # App routes & layout
+components/         # UI building blocks
+lib/                # Data & utilities
+public/             # Static assets (images, icons, lotties)
+```
+
+### Notes
+
+- Favicon and tab title use the current header branding.
+- Images live under `public/`; update there to swap visuals quickly.
