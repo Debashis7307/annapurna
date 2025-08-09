@@ -91,7 +91,7 @@ export default function FeatureCards() {
                     transition={{ duration: 0.9, ease: "easeOut" }}
                   />
 
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 px-6 pt-6">
+                  <CardHeader className="flex flex-row items-center justify-between space-y-0 px-5 pt-4">
                     <div className="flex items-center gap-3">
                       <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10">
                         <f.icon className="h-5 w-5 text-white" />
@@ -107,7 +107,7 @@ export default function FeatureCards() {
                     </Badge>
                   </CardHeader>
 
-                  <CardContent className="pb-6 pt-2">
+                  <CardContent className="pb-4 pt-1 px-5">
                     <p className="text-sm text-slate-300">{f.desc}</p>
 
                     {/* Feature chip row */}

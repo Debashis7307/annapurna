@@ -34,7 +34,7 @@ export const mockRecipes: Recipe[] = [
     time: 25,
     calories: 380,
     tags: ["grill", "low-carb", "high-protein"],
-    image: "/placeholder-vcdct.png",
+    image: "/hchecken.jpg",
   },
   {
     id: "r4",
@@ -43,7 +43,7 @@ export const mockRecipes: Recipe[] = [
     time: 18,
     calories: 320,
     tags: ["fresh", "meal-prep"],
-    image: "/placeholder-gnc9a.png",
+    image: "/salad.jpg",
   },
   {
     id: "r5",
@@ -52,7 +52,7 @@ export const mockRecipes: Recipe[] = [
     time: 30,
     calories: 560,
     tags: ["curry", "comfort"],
-    image: "/placeholder-dtyjl.png",
+    image: "/carry.jpg",
   },
   {
     id: "r6",
@@ -61,6 +61,6 @@ export const mockRecipes: Recipe[] = [
     time: 15,
     calories: 450,
     tags: ["wraps", "quick", "lunch"],
-    image: "/placeholder-de8bk.png",
+    image: "/veg.jpg",
   },
 ]

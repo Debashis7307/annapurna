@@ -4,9 +4,12 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Annapurna',
+  description: 'Recipes That Fit Your Life',
   generator: 'v0.dev',
+  icons: {
+    icon: '/aplogo1.png',
+  },
 }
 
 export default function RootLayout({

@@ -36,15 +36,15 @@ export default function RecipesExplorer() {
           <h2 className="text-2xl font-bold text-white sm:text-3xl">Recipe Explorer</h2>
           <p className="mt-2 text-slate-400">Search, filter, and discover recipes that fit your time and taste.</p>
         </div>
-        <div className="flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row">
+        <div className="flex w-full flex-col items-stretch gap-3 sm:w-auto">
           <Input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search by name, tag, diet..."
-            className="w-full border-white/15 bg-white/5 text-slate-100 placeholder:text-slate-400"
+            className="w-full border-white/15 bg-white/5 text-slate-100 placeholder:text-slate-400 hover:text-white"
             aria-label="Search recipes"
           />
-          <div className="flex gap-2 overflow-x-auto no-scrollbar">
+          <div className="flex flex-wrap gap-2">
             {(["Any", "Vegetarian", "Vegan", "Gluten-Free", "Keto"] as Diet[]).map((d) => (
               <Button
                 key={d}
@@ -52,8 +52,8 @@ export default function RecipesExplorer() {
                 onClick={() => setDiet(d)}
                 className={
                   diet === d
-                    ? "bg-fuchsia-500 hover:bg-fuchsia-400 text-slate-900"
-                    : "border-white/20 bg-white/5 text-slate-100 hover:bg-white/10"
+                    ? "bg-cyan-500 hover:bg-cyan-400 text-slate-900 shadow-[0_8px_24px_-8px_rgba(34,211,238,0.55)] hover:shadow-[0_12px_32px_-8px_rgba(34,211,238,0.65)]"
+                    : "border-white/20 bg-white/5 text-slate-100 hover:bg-white/10 hover:text-white"
                 }
               >
                 {d}
@@ -117,7 +117,7 @@ export default function RecipesExplorer() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex items-center justify-between">
-                    <Button variant="ghost" className="text-slate-200 hover:bg-white/10">
+                     <Button variant="ghost" className="text-slate-200 hover:bg-white/10 hover:text-white">
                       <Utensils className="mr-2 h-4 w-4" />
                       View Recipe
                     </Button>

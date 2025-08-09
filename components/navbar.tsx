@@ -20,7 +20,7 @@ export default function Navbar(
         sticky ? "sticky top-0" : ""
       } z-50 w-full border-b border-white/10 bg-slate-950/60 backdrop-blur supports-[backdrop-filter]:bg-slate-950/40`}
     >
-      <nav className="container mx-auto flex items-center justify-between px-4 py-4" aria-label="Primary">
+      <nav className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4" aria-label="Primary">
         <a href="#home" className="flex items-center gap-2">
           <Logo />
           <span className="sr-only">Annapurna Home</span>
@@ -51,7 +51,10 @@ export default function Navbar(
         </ul>
 
         <div className="hidden md:block">
-          <Button asChild className="bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold">
+          <Button
+            asChild
+            className="group bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold shadow-[0_8px_24px_-8px_rgba(16,185,129,0.6)] hover:shadow-[0_12px_32px_-8px_rgba(16,185,129,0.7)] transition-shadow"
+          >
             <a href="#recipes">Try Annapurna</a>
           </Button>
         </div>
