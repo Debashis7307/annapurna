@@ -29,7 +29,7 @@ const uiBlocks = [
   { icon: Upload, title: "BillUploader", text: "Upload/drag or use camera. Preview and Process Bill CTA." },
   { icon: ListChecks, title: "OcrResultEditor", text: "Confirm extracted items, edit quantities, add/remove lines." },
   { icon: Utensils, title: "RecipeList / Card", text: "Recipe cards with time and macro highlights, quick actions." },
-  { icon: Apple, title: "NutritionModal", text: "View a clear per-serving breakdown of your meal — Calories, Protein, Carbs & Fat. " },
+  { icon: Apple, title: "NutritionModal", text: "View a clear per-serving breakdown of your meal — Calories, Protein, Carbs & Fat " },
   { icon: CalendarRange, title: "Diet Lock", text: "Secure and save your meal plan in the Diet Board, so you can lock in your daily intake and track it with ease." },
 ]
 
@@ -57,7 +57,7 @@ export default function HowItWorks() {
           {/* Responsive video placed within the laptop screen area */}
           <div className="pointer-events-none absolute left-[8.5%] right-[12.5%] top-[9%] bottom-[25%] rounded-[5px] overflow-hidden shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]">
             <video
-              src="/annapurna.mp4"
+              src="https://annapurna-recipe.vercel.app/AnnaPurna.mp4"
               autoPlay
               muted
               loop
