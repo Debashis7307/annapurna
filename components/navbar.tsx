@@ -34,13 +34,13 @@ export default function Navbar(
             </a>
           </li>
           <li>
-            <a href="#recipes" className="text-sm text-slate-300 hover:text-white transition-colors">
-              Recipes
+            <a href="#demo" className="text-sm text-slate-300 hover:text-white transition-colors">
+              Demo
             </a>
           </li>
           <li>
-            <a href="#demo" className="text-sm text-slate-300 hover:text-white transition-colors">
-              Demo
+            <a href="#recipes" className="text-sm text-slate-300 hover:text-white transition-colors">
+              Recipes
             </a>
           </li>
           <li>
@@ -75,6 +75,15 @@ export default function Navbar(
           <ul className="flex flex-col gap-2 px-4 py-4">
             <li>
               <a
+                href="#home"
+                onClick={() => setOpen(false)}
+                className="block rounded-md px-3 py-2 text-slate-200 hover:bg-white/10"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
                 href="#features"
                 onClick={() => setOpen(false)}
                 className="block rounded-md px-3 py-2 text-slate-200 hover:bg-white/10"
@@ -84,20 +93,20 @@ export default function Navbar(
             </li>
             <li>
               <a
-                href="#recipes"
-                onClick={() => setOpen(false)}
-                className="block rounded-md px-3 py-2 text-slate-200 hover:bg-white/10"
-              >
-                Recipes
-              </a>
-            </li>
-            <li>
-              <a
                 href="#demo"
                 onClick={() => setOpen(false)}
                 className="block rounded-md px-3 py-2 text-slate-200 hover:bg-white/10"
               >
                 Demo
+              </a>
+            </li>
+            <li>
+              <a
+                href="#recipes"
+                onClick={() => setOpen(false)}
+                className="block rounded-md px-3 py-2 text-slate-200 hover:bg-white/10"
+              >
+                Recipes
               </a>
             </li>
             <li>

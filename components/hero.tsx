@@ -2,11 +2,25 @@
 
 import { Button } from "@/components/ui/button"
 import { ChefHat, PlayCircle, Sparkles } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useMemo, useState } from "react"
 import { DotLottieReact } from "@lottiefiles/dotlottie-react"
 
 export default function Hero() {
+  const rotatingWords = useMemo(
+    () => ["Nutrition", "Recipes", "Calories", "Nutrients", "Protein", "Carbs"],
+    []
+  )
+  const [activeWordIndex, setActiveWordIndex] = useState(0)
+
+  useEffect(() => {
+    const intervalMs = 2200
+    const id = setInterval(() => {
+      setActiveWordIndex((i) => (i + 1) % rotatingWords.length)
+    }, intervalMs)
+    return () => clearInterval(id)
+  }, [rotatingWords.length])
+
   return (
     <section id="home" className="relative isolate overflow-hidden" aria-labelledby="hero-title">
       {/* Gradient spotlight */}
@@ -31,12 +45,32 @@ export default function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, ease: "easeOut", delay: 0.05 }}
             viewport={{ once: true }}
-            className="mt-5 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
+            className="mt-5 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl max-[320px]:text-3xl"
           >
             <span className="bg-gradient-to-br from-emerald-300 via-amber-200 to-fuchsia-300 bg-clip-text text-transparent">
               Annapurna
             </span>
-            <span className="block text-slate-300">Recipes That Fit Your Life</span>
+            <span className="block text-slate-300">
+              <span className="inline-grid grid-rows-[auto_auto] gap-y-1">
+                <span className="relative block h-[1em] w-[9ch] sm:w-[10ch] max-[325px]:w-[10ch]">
+                  <AnimatePresence mode="wait" initial={false}>
+                    <motion.span
+                      key={rotatingWords[activeWordIndex]}
+                      initial={{ opacity: 0, y: 8, filter: "blur(2px)" }}
+                      animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                      exit={{ opacity: 0, y: -8, filter: "blur(2px)" }}
+                      transition={{ duration: 0.35, ease: "easeOut" }}
+                      className="absolute inset-0 bg-gradient-to-br from-emerald-300 via-amber-200 to-fuchsia-300 bg-clip-text text-transparent"
+                    >
+                      {rotatingWords[activeWordIndex]}
+                    </motion.span>
+                  </AnimatePresence>
+                  {/* width reservation to avoid layout shift */}
+                  <span className="invisible">Nutrients</span>
+                </span>
+                <span className="leading-tight max-[320px]:text-2xl max-[320px]:whitespace-nowrap">That Fit Your Health</span>
+              </span>
+            </span>
           </motion.h1>
 
           <motion.p

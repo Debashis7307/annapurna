@@ -11,15 +11,17 @@ export default function Page() {
     <main className="relative min-h-screen bg-slate-950 text-slate-100 overflow-clip">
       <AnimatedBackground />
       <Navbar />
-      <Hero />
+      <section id="home" className="relative z-10">
+        <Hero />
+      </section>
       <section id="features" className="relative z-10">
         <FeatureCards />
       </section>
-      <section id="recipes" className="relative z-10">
-        <RecipesExplorer />
-      </section>
       <section id="demo" className="relative z-10">
         <HowItWorks />
+      </section>
+      <section id="recipes" className="relative z-10">
+        <RecipesExplorer />
       </section>
       <Footer />
     </main>
