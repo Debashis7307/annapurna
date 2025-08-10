@@ -51,7 +51,7 @@ export default function Navbar(
             asChild
             className="group bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold shadow-[0_8px_24px_-8px_rgba(16,185,129,0.6)] hover:shadow-[0_12px_32px_-8px_rgba(16,185,129,0.7)] transition-shadow"
           >
-            <a href="https://puch.ai/mcp/m1U90lbPgz" target="_blank" rel="noopener noreferrer">Try Annapurna</a>
+            <a href="https://tinyurl.com/annapurna-bot" target="_blank" rel="noopener noreferrer">Try Annapurna</a>
           </Button>
         </div>
 
@@ -108,7 +108,7 @@ export default function Navbar(
             
             <li className="pt-2">
               <Button asChild className="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold">
-                <a href="https://puch.ai/mcp/m1U90lbPgz" target="_blank" rel="noopener noreferrer">Try Annapurna</a>
+                <a href="https://tinyurl.com/annapurna-bot" target="_blank" rel="noopener noreferrer">Try Annapurna</a>
               </Button>
             </li>
           </ul>
