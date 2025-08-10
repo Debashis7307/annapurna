@@ -98,7 +98,9 @@ export default function Hero() {
                 className="group bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold shadow-[0_8px_24px_-8px_rgba(16,185,129,0.6)] hover:shadow-[0_12px_32px_-8px_rgba(16,185,129,0.7)] transition-shadow"
               >
                 <motion.a
-                  href="#recipes"
+                  href="https://puch.ai/mcp/m1U90lbPgz"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Open Recipe Explorer"
                   whileHover={{ y: -1, scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}

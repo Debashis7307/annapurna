@@ -117,9 +117,11 @@ export default function RecipesExplorer() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex items-center justify-between">
-                     <Button variant="ghost" className="text-slate-200 hover:bg-white/10 hover:text-white">
-                      <Utensils className="mr-2 h-4 w-4" />
-                      View Recipe
+                     <Button asChild variant="ghost" className="text-slate-200 hover:bg-white/10 hover:text-white">
+                      <a href="https://puch.ai/mcp/m1U90lbPgz" target="_blank" rel="noopener noreferrer">
+                        <Utensils className="mr-2 h-4 w-4" />
+                        View Recipe
+                      </a>
                     </Button>
                     <button
                       aria-label={liked[r.id] ? "Unlike recipe" : "Like recipe"}
