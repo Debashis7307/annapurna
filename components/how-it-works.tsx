@@ -52,7 +52,7 @@ export default function HowItWorks() {
         <div className="pointer-events-none absolute inset-0 -z-10 rounded-[22px] bg-gradient-to-tr from-emerald-500/15 via-fuchsia-400/15 to-amber-300/15 blur-2xl" />
         <div className="relative overflow-hidden rounded-[22px] shadow-xl">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/lap-photoroom.png" alt="Demo laptop" className="w-full h-auto object-cover" />
+          <img src="/lapPhotoroom.png" alt="Demo laptop" className="w-full h-auto object-cover" />
 
           {/* Responsive video placed within the laptop screen area */}
           <div className="pointer-events-none absolute left-[8.5%] right-[12.5%] top-[9%] bottom-[25%] rounded-[5px] overflow-hidden shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]">
