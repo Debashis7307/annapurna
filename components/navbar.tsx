@@ -43,11 +43,7 @@ export default function Navbar(
               Recipes
             </a>
           </li>
-          <li>
-            <a href="#contact" className="text-sm text-slate-300 hover:text-white transition-colors">
-              Contact
-            </a>
-          </li>
+          
         </ul>
 
         <div className="hidden md:block">
@@ -109,15 +105,7 @@ export default function Navbar(
                 Recipes
               </a>
             </li>
-            <li>
-              <a
-                href="#contact"
-                onClick={() => setOpen(false)}
-                className="block rounded-md px-3 py-2 text-slate-200 hover:bg-white/10"
-              >
-                Contact
-              </a>
-            </li>
+            
             <li className="pt-2">
               <Button asChild className="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold">
                 <a href="https://puch.ai/mcp/m1U90lbPgz" target="_blank" rel="noopener noreferrer">Try Annapurna</a>

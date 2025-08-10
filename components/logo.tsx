@@ -18,7 +18,7 @@ export default function Logo(
           Annapurna
         </span>
         {!small && (
-          <span className="text-[10px] uppercase tracking-[0.2em] text-slate-400">Recipes That Fit Your Life</span>
+          <span className="text-[10px] uppercase tracking-[0.2em] text-slate-400">Goddess of nourishment of your Health</span>
         )}
       </div>
     </div>
